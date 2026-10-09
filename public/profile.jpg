@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E8FF"/>
+      <stop offset="50%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F3E5AB"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D5524"/>
+      <stop offset="50%" stop-color="#703D14"/>
+      <stop offset="100%" stop-color="#582F0E"/>
+    </linearGradient>
+    <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#145A32"/>
+      <stop offset="50%" stop-color="#1E8449"/>
+      <stop offset="100%" stop-color="#117864"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F0EDF5"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle circular aura -->
+  <circle cx="200" cy="180" r="140" fill="#E9D5FF" opacity="0.4" filter="url(#softGlow)"/>
+  <circle cx="200" cy="180" r="110" fill="#FBF3D5" opacity="0.5"/>
+
+  <!-- Body / Coat & Scrubs -->
+  <g>
+    <!-- Dark green scrubs undercoat -->
+    <path d="M120 400 L120 310 Q200 330 280 310 L280 400 Z" fill="url(#scrubGrad)"/>
+    <!-- V-Neck scrubs -->
+    <path d="M170 270 L200 320 L230 270 Z" fill="#145A32"/>
+    <!-- Crisp White Doctor / Nurse Lab Coat -->
+    <path d="M70 400 L100 280 Q140 270 170 280 L185 360 L140 400 Z" fill="url(#coatGrad)" stroke="#E2D9F3" stroke-width="1.5"/>
+    <path d="M330 400 L300 280 Q260 270 230 280 L215 360 L260 400 Z" fill="url(#coatGrad)" stroke="#E2D9F3" stroke-width="1.5"/>
+    <!-- Coat Lapels -->
+    <path d="M140 280 L180 340 L165 400" fill="none" stroke="#D1C4E9" stroke-width="2"/>
+    <path d="M260 280 L220 340 L235 400" fill="none" stroke="#D1C4E9" stroke-width="2"/>
+  </g>
+
+  <!-- Neck -->
+  <path d="M175 220 L175 285 Q200 295 225 285 L225 220 Z" fill="url(#skinGrad)"/>
+
+  <!-- Stethoscope around neck -->
+  <g stroke="url(#goldGrad)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 260 C155 310 180 360 200 365 C220 360 245 310 240 260"/>
+    <path d="M200 365 L200 380"/>
+  </g>
+  <circle cx="200" cy="385" r="9" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="160" cy="256" r="4" fill="#D4AF37"/>
+  <circle cx="240" cy="256" r="4" fill="#D4AF37"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="180" rx="55" ry="68" fill="url(#skinGrad)"/>
+
+  <!-- Elegant styled hair -->
+  <path d="M135 180 C130 110 170 90 200 90 C230 90 270 110 265 180 C275 160 275 125 260 105 C240 80 160 80 140 105 C125 125 125 160 135 180 Z" fill="#1A0F07"/>
+  <!-- Hair Bun / Crown -->
+  <ellipse cx="200" cy="85" rx="42" ry="32" fill="#1A0F07"/>
+  <!-- Delicate Gold Hair Accessory / Tiara Accent -->
+  <path d="M180 80 Q200 70 220 80" stroke="url(#goldGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="74" r="3" fill="#D4AF37"/>
+
+  <!-- Face Features: Brows, Eyelashes, Gentle Smile -->
+  <!-- Brows -->
+  <path d="M165 155 Q178 150 190 156" stroke="#221207" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M210 156 Q222 150 235 155" stroke="#221207" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes with winged eyeliner -->
+  <path d="M167 166 Q178 160 189 166" stroke="#120A04" stroke-width="2.5" fill="none"/>
+  <path d="M189 166 L194 163" stroke="#120A04" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="178" cy="167" r="4.5" fill="#2E1807"/>
+  <circle cx="179" cy="165" r="1.5" fill="#FFFFFF"/>
+
+  <path d="M211 166 Q222 160 233 166" stroke="#120A04" stroke-width="2.5" fill="none"/>
+  <path d="M233 166 L238 163" stroke="#120A04" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="222" cy="167" r="4.5" fill="#2E1807"/>
+  <circle cx="223" cy="165" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <path d="M197 175 Q200 188 195 192 Q200 194 205 192" stroke="#582F0E" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Lips / Radiant Smile with soft pink berry lipgloss -->
+  <path d="M184 210 Q200 206 216 210 Q200 224 184 210 Z" fill="#993D59"/>
+  <path d="M188 210 Q200 216 212 210" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Beauty Gold Hoop Earrings -->
+  <ellipse cx="143" cy="192" rx="4" ry="12" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  <ellipse cx="257" cy="192" rx="4" ry="12" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+  <!-- Subtle Pink Blossom Behind Ear -->
+  <circle cx="254" cy="145" r="10" fill="#F472B6" opacity="0.85"/>
+  <circle cx="258" cy="140" r="8" fill="#FBCFE8" opacity="0.9"/>
+  <circle cx="254" cy="145" r="3" fill="#FBBF24"/>
+
+  <!-- Sparkles -->
+  <path d="M310 110 L313 120 L323 123 L313 126 L310 136 L307 126 L297 123 L307 120 Z" fill="#D4AF37"/>
+  <path d="M85 140 L87 148 L95 150 L87 152 L85 160 L83 152 L75 150 L83 148 Z" fill="#C084FC"/>
+</svg>
