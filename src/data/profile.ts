@@ -97,21 +97,4 @@ export const PROFILE_DATA = {
       actionLabel: "Email",
     },
   ] as SocialLink[],
-  defaultAvatars: [
-    {
-      id: "profile-local",
-      name: "profile.jpg (Vercel Root)",
-      url: "/profile.jpg",
-    },
-    {
-      id: "nurse-editorial",
-      name: "Editorial Medical Portrait",
-      url: "https://images.unsplash.com/photo-1594824813579-22a30b42fdf4?auto=format&fit=crop&w=800&q=80",
-    },
-    {
-      id: "beauty-scrubs",
-      name: "Luxury Scrubs Aesthetic",
-      url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80",
-    },
-  ],
 };

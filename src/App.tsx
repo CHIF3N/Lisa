@@ -75,11 +75,24 @@ export default function App() {
       </main>
 
       {/* 5. Minimal Sleek Signature Footer */}
-      <footer className="z-10 mt-6 mb-2 text-center max-w-md w-full px-2">
+      <footer className="z-10 mt-6 mb-3 text-center max-w-md w-full px-2 flex flex-col items-center gap-1.5">
         <p className="text-[11px] text-neutral-500 font-sans-clean flex items-center justify-center gap-1.5">
           <span className="font-serif-luxury font-semibold text-[#2A1B3D]">Ashu Elisabeth Tambe</span>
           <span className="text-[#D4AF37]">✦</span>
           <span>MSN Lisa 🌸🩺</span>
+        </p>
+
+        <p className="text-[10px] text-neutral-600 font-sans-clean tracking-wide flex items-center justify-center gap-1.5 flex-wrap">
+          <span className="italic font-serif-luxury text-neutral-600">Built by Sir Chifen | Fanthom Cards</span>
+          <span className="text-[#D4AF37]">·</span>
+          <a
+            href="https://instagram.com/chif_3n"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-600 hover:text-[#9333EA] transition-colors font-medium underline underline-offset-2 decoration-[#D4AF37]/50"
+          >
+            Socials @chif_3n
+          </a>
         </p>
       </footer>
 
