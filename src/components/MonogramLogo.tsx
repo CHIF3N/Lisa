@@ -42,22 +42,22 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
           <defs>
             {/* Gold foil gradients */}
             <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#F7E7B4" />
-              <stop offset="35%" stop-color="#D4AF37" />
-              <stop offset="70%" stop-color="#AA7C11" />
-              <stop offset="100%" stop-color="#F2DB94" />
+              <stop offset="0%" stopColor="#F7E7B4" />
+              <stop offset="35%" stopColor="#D4AF37" />
+              <stop offset="70%" stopColor="#AA7C11" />
+              <stop offset="100%" stopColor="#F2DB94" />
             </linearGradient>
 
             <linearGradient id="darkPlumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2D1A3F" />
-              <stop offset="50%" stop-color="#3A1C54" />
-              <stop offset="100%" stop-color="#1F0F2E" />
+              <stop offset="0%" stopColor="#2D1A3F" />
+              <stop offset="50%" stopColor="#3A1C54" />
+              <stop offset="100%" stopColor="#1F0F2E" />
             </linearGradient>
 
             <linearGradient id="pearlRing" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8" />
-              <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9" />
-              <stop offset="100%" stop-color="#AA7C11" stop-opacity="0.8" />
+              <stop offset="0%" stopColor="#D4AF37" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#FFFFFF" stopOpacity="0.9" />
+              <stop offset="100%" stopColor="#AA7C11" stopOpacity="0.8" />
             </linearGradient>
 
             {/* Circular Path for Inscribed Text */}
@@ -76,8 +76,8 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             cy="120"
             r="104"
             stroke="url(#goldLinear)"
-            stroke-width="1.5"
-            stroke-dasharray="3 3"
+            strokeWidth="1.5"
+            strokeDasharray="3 3"
             opacity="0.75"
           />
           <circle
@@ -85,7 +85,7 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             cy="120"
             r="98"
             stroke="url(#goldLinear)"
-            stroke-width="0.8"
+            strokeWidth="0.8"
             opacity="0.5"
           />
 
@@ -93,8 +93,8 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
           <path
             d="M 52,142 C 60,196 180,196 188,142"
             stroke="url(#goldLinear)"
-            stroke-width="1.8"
-            stroke-linecap="round"
+            strokeWidth="1.8"
+            strokeLinecap="round"
             opacity="0.4"
           />
           <circle cx="120" cy="190" r="3.5" fill="url(#goldLinear)" opacity="0.6" />
@@ -115,13 +115,13 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             <text
               x="120"
               y="136"
-              text-anchor="middle"
-              font-family="'Playfair Display', 'Cinzel', serif"
-              font-size="68"
-              font-weight="700"
-              font-style="italic"
+              textAnchor="middle"
+              fontFamily="'Playfair Display', 'Cinzel', serif"
+              fontSize="68"
+              fontWeight="700"
+              fontStyle="italic"
               fill="url(#goldLinear)"
-              letter-spacing="0"
+              letterSpacing="0"
               style={{ filter: 'drop-shadow(0px 2px 4px rgba(0,0,0,0.5))' }}
             >
               E
@@ -131,10 +131,10 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             <text
               x="82"
               y="132"
-              text-anchor="middle"
-              font-family="'Playfair Display', serif"
-              font-size="44"
-              font-weight="600"
+              textAnchor="middle"
+              fontFamily="'Playfair Display', serif"
+              fontSize="44"
+              fontWeight="600"
               fill="url(#goldLinear)"
               opacity="0.92"
               style={{ filter: 'drop-shadow(0px 2px 3px rgba(0,0,0,0.4))' }}
@@ -146,10 +146,10 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             <text
               x="158"
               y="132"
-              text-anchor="middle"
-              font-family="'Playfair Display', serif"
-              font-size="44"
-              font-weight="600"
+              textAnchor="middle"
+              fontFamily="'Playfair Display', serif"
+              fontSize="44"
+              fontWeight="600"
               fill="url(#goldLinear)"
               opacity="0.92"
               style={{ filter: 'drop-shadow(0px 2px 3px rgba(0,0,0,0.4))' }}
@@ -163,11 +163,11 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             <text
               x="120"
               y="152"
-              text-anchor="middle"
-              font-family="'Montserrat', sans-serif"
-              font-size="10.5"
-              font-weight="700"
-              letter-spacing="3"
+              textAnchor="middle"
+              fontFamily="'Montserrat', sans-serif"
+              fontSize="10.5"
+              fontWeight="700"
+              letterSpacing="3"
               fill="#F5E1A4"
               opacity="0.95"
             >
@@ -176,11 +176,11 @@ export const MonogramLogo: React.FC<MonogramLogoProps> = ({ size = 'lg' }) => {
             <text
               x="120"
               y="166"
-              text-anchor="middle"
-              font-family="'Montserrat', sans-serif"
-              font-size="7.5"
-              font-weight="500"
-              letter-spacing="2.5"
+              textAnchor="middle"
+              fontFamily="'Montserrat', sans-serif"
+              fontSize="7.5"
+              fontWeight="500"
+              letterSpacing="2.5"
               fill="#D8B4FE"
               opacity="0.85"
             >
